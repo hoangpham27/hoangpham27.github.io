@@ -1,0 +1,64 @@
+/* PC >= 1024px */
+@media (min-width: 64em) {
+   
+}
+
+/* Tablet & mobile */
+@media (max-width: 63.9375em) {
+
+    .contact-form .form-control {
+        padding: 15px;
+        font-size: 16px;
+    }
+    .socials-list {
+        font-size: 48px;
+    }
+    #footer .socials-list a {
+        margin: 0 8px;
+    }
+    #footer .copy-right a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+
+/* Tablet >=740px && < 1024px*/
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+}
+
+/* Moblie < 740px */
+@media (max-width: 46.1875em) {
+    .s-full-width,
+    .s-col-full {
+        width: 100% !important;
+    }
+    #nav {
+        float: none;
+        display: block;
+    }
+    #nav li {
+        display: block;
+    }
+    #header .mobile-menu-btn {
+        display: block;
+    }
+    .s-mt-16 {
+        margin-top: 16px;
+    }
+    #about img, #menu img {
+        width: 100%;
+    }
+    .form-fill {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+    .contact-form{
+        margin-top: 16px;
+    }
+    .contact-submit-btn{
+        padding: 15px 16px;
+        width: 100%;
+    }
+    
+}

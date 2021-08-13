@@ -1,0 +1,261 @@
+/*Reset CSS*/
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    font-family: "Times New Roman", Georgia, Serif;
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+h1 {
+    font-size: 36px;
+}
+p {
+    margin: 15px 0;
+}
+/*
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, hình tròn, vuông ...)*/
+/* #main {
+
+} */
+/* Common */
+.text-white {
+    color: white !important;
+}
+.text-grey {
+    color: #757575;
+}
+.text-center {
+    text-align: center !important ;
+}
+.pull-right {
+    float: right;
+}
+.mt-8 {
+    margin-top: 8px;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.mt-32 {
+    margin-top: 32px;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+/* .row {
+    
+} */
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.col-half {
+    width: 50%;
+}
+.col-full {
+    width: 100%;
+}
+/* Main */
+#header {
+    height: 46px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 4px 16px;
+    box-shadow: 0 0 5px #000;
+    overflow: hidden;
+}
+/* Begin Navigation */
+
+#header .logo{
+    display: inline-block;
+}
+/* #nav {
+    
+} */
+#nav li {
+    display: inline-block;
+    list-style-type: none;
+}
+#header .logo a, #nav li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 4px;
+    padding: 14px 16px;
+    display: block;
+}
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    float: right;
+    padding: 14px 21px;
+}
+#nav li:hover, 
+#header .logo:hover,
+.mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+/* End Navigation */
+
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%; /* kích thước chiều cao = 50% chiều ngang của chính nó */  
+    background: url(../img/hamburger.jpg) no-repeat top center / cover  ;/*short hand size phải có '/' */;
+}
+#slider h4 {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 36px;
+    color: rgba(0,0,0,0.6);
+}
+/* Content */
+/* #content {
+
+} */
+#content .content-section {
+    padding: 64px 0px;
+    width: 1100px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #ccc;
+}
+#about img,
+#menu img {
+    /* width: 100%; */
+    width: 502px;
+    max-width: 100%;
+    border-radius: 4px;
+    opacity: 0.8;
+}
+#about img:hover,
+#menu img:hover {
+    opacity: 0.9;
+}
+.text-careting2 {
+    text-align: justify;
+    margin-top: 22px;
+}
+.text-careting2 .heading-about{
+    font-size: 36px;
+}
+.text-careting2 .sub-heading-about{
+    font-size: 18px;
+}
+.text-careting2 p {
+    font-size: 18px;
+    margin: 18px 0px;
+    line-height: 1.5;
+}
+
+.text-careting2 .seasonal {
+    padding: 0 8px;
+    background-color: #f1f1f1;
+}
+.content-section .about-menu {
+    margin-bottom: 22px;
+}
+/* Contact */
+.content-section .section-sub-heading {
+    font-size: 18px;
+    font-style: italic;
+}
+.contact-content {
+    margin-top: 64px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info a {
+    color: #00e;
+    opacity: 0.8;
+}
+.contact-info a:hover {
+    opacity: 1;
+}
+.contact-info i[class*='ti-'] {
+    width: 30px;
+    display: inline-block;
+}
+.contact-form {
+    font-size: 15px;
+}
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px #ccc solid;
+    width: 100%;
+}
+.contact-submit-btn {
+    padding: 11px 16px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;;
+}
+.submit {
+    margin: 16px;
+}
+.submit::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* Footer */
+#footer {
+    background-color: #f1f1f1;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .socials-list {
+    font-size: 24px;
+}
+
+#footer .socials-list a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+}
+#footer .copy-right a:hover,
+#footer .socials-list a:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,0.4);
+}
+
+#footer .copy-right {
+    margin-top: 15px;
+    color: rgba(0,0,0,0.6);
+}
+
+#footer .copy-right a {
+    color: rgba(0,0,0,0.6);
+}
